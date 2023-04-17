@@ -39,3 +39,17 @@ balls.forEach((el, i, ra) => {
     }
   );
 });
+
+const code = document.getElementById("code");
+const text = "Hello, World!";
+let i = 0;
+
+function type() {
+  if (i < text.length) {
+    code.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(type, Math.floor(Math.random() * 200) + 50);
+  }
+}
+
+type();
