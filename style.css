@@ -8,8 +8,6 @@ body{
     background: #232526;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-
 }
 
 .container1{
@@ -54,5 +52,30 @@ h1{
 }
 
 .text2{
-    color:gray;
+    color:grey;;
+}
+
+.name1{
+    animation: color1 5s ease-in-out infinite;
+}
+
+@keyframes color1{
+    0%{
+        color:grey;
+    }
+    25%{
+        color:#64ffda;
+
+    }
+    50%{
+        color:grey;
+
+    }
+    75%{
+        color:#64ffda;
+
+    }
+    100%{
+        color:grey;
+    }
 }
