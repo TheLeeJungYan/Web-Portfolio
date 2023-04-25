@@ -5,15 +5,15 @@
 
 body{
     font-family: "Poppins",Sans-serif;
-    background: #232526;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .container1{
     position:absolute;
-    top:40%;
+    width:80%;
+    height:50%;
     left:10%;
+    top:30%;
 }
 
 .container2,.container3{
@@ -31,12 +31,12 @@ body{
 }
 
 .container2{
-    border-left:1px solid white;
+    border-left:1px solid black;
 }
 
 h1{
-    color:white;
-    font-size:100px;
+
+    font-size:70px;
 }
 
 .navbar{
@@ -79,3 +79,14 @@ h1{
         color:grey;
     }
 }
+
+#img2{
+    position:relative;
+    left:50%;
+    width:50%;
+    height:50%;
+    z-index:-1
+}
+
+
+
