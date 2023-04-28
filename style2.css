@@ -1,70 +1,44 @@
 *{
-    margin:0;
-    padding:0;
+    margin:0%;
+    padding:0%;
     box-sizing:border-box;
 }
 
-body{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    min-height:100vh;
-    background:#050505;
+html,body{
+    width:100%;
+    height:100%;
 }
 
-.cube{
+#main{
     position:relative;
-    width:100px;
-    height:100px;
-    transform-style: preserve-3d;
-    animation: animate 10s linear infinite;
+    overflow:hidden;
 }
 
-@keyframes animate{
-    0%{
-        transform: rotateX(-30deg) rotateY(0deg);
-    }
-    100%{
-        transform: rotateX(-30deg) rotateY(360deg);
-    }
+#page{
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
 }
 
-.cube div{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    transform-style: preserve-3d;
-}
-.cube div span{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:linear-gradient(#151515,#00ec00);
-    transform: rotateY(calc(90deg * var(--i))) translateZ(50px);
-}
-.top{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100px;
-    height:100px;
-    background:#222;
-    transform: rotateX(90deg) translateZ(50px);
+#page1{
+    height: 100vh;
+    width: 100vw;
+    background-color: indigo;
 }
 
-.top::before{
-    content: '';
-    position:absolute;
-    top:0;
-    left:0;
-    width:100px;
-    height:100px;
-    background:#0f0;
-    transform: translateZ(-200px);
-    filter:blur(20px);
-    box-shadow: 0 0 120px rgba(0,255,0,0.2);
-} 
+#page2{
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
+}
+
+#page3{
+    height: 100vh;
+    width: 100vw;
+    background-color: green;
+}
+
+canvas{
+    max-width:100vw;
+    max-height:100vh;
+}
